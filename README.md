@@ -6,7 +6,6 @@ These functions are intended to be used in the Python shell.
 ```
 >>> %Run mass_unit_test.py
 
-
 >>> mass_unit_test (add5, "1|2|3", '|')
 assert_equal(add5(1), ___)
 assert_equal(add5(2), ___)
