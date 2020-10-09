@@ -10,8 +10,10 @@ def mass_unit_test (function_name: str, inputs: str, split_char_in:str, outputs=
         function_name (str): The name of the function being unit tested
         inputs (str): A triple-quoted string containing all the tested inputs, each
             separated by line breaks
+        split_char_in (str): The string used to separate elements of the inputs
         outputs (str): A triple-quoted string containing all the tested outputs, each
             separated by line breaks. Must line up one-to-one with inputs.
+        split_char_out (str): The string used to separate elements of the outputs
     
     Returns:
         (str): Unit tests that can be copy+pasted directly into your code
@@ -21,7 +23,7 @@ def mass_unit_test (function_name: str, inputs: str, split_char_in:str, outputs=
     if outputs:
         y = outputs.split(split_char_out)
     else:
-        for i in inputs:
+        for i in x:
             y.append("___")
     if len(x) == len(y):
         for i in range(len(x)):
