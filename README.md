@@ -2,7 +2,7 @@
 A tool for formatting unit tests
 
 ## Usage
-These functions are intended to be used in the Python shell.
+This function is intended to be used in the Python shell.
 ```
 >>> %Run mass_unit_test.py
 
