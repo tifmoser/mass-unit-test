@@ -11,7 +11,7 @@ assert_equal(add5(1), ___)
 assert_equal(add5(2), ___)
 assert_equal(add5(3), ___)
 
->>> mass_unit_test (add5, "1|2|3", '|', "5_6_7", '_')
+>>> mass_unit_test (add5, "1|2|3", '|', "6_7_8", '_')
 assert_equal(add5(1), 6)
 assert_equal(add5(2), 7)
 assert_equal(add5(3), 8)
