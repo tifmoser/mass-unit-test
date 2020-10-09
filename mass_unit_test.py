@@ -1,4 +1,4 @@
-def mass_unit_test_a (function_name: str, inputs: str):
+def mass_unit_test_a (function_name: str, inputs: str, split_char: str):
     '''
     This function generates unit tests for the given function, when it's called with
     the given inputs. These unit tests can be pasted into your code, as long as the
@@ -14,14 +14,14 @@ def mass_unit_test_a (function_name: str, inputs: str):
         (str): Unit tests that can be copy+pasted directly into your code, with blanks
             where the desired outputs should be specified
     '''
-    x = inputs.split('\n')
+    x = inputs.split(split_char)
     for i in x:
         print("assert_equal(" + function_name + "(" + i + "), ___)")
     return
 
 
 
-def mass_unit_test_b (function_name: str, inputs: str, outputs: str):
+def mass_unit_test_b (function_name: str, inputs: str, split_char_in:str, outputs: str, split_char_out: str):
     '''
     This function generates unit tests to test the given function for the given
     outputs, when it's called with the given inputs. These unit tests can be pasted
@@ -38,12 +38,12 @@ def mass_unit_test_b (function_name: str, inputs: str, outputs: str):
     Returns:
         (str): Unit tests that can be copy+pasted directly into your code
     '''
-    x = inputs.split('\n')
-    y = outputs.split('\n')
+    x = inputs.split(split_char_in)
+    y = outputs.split(split_char_out)
     if len(x) == len(y):
         for i in range(len(x)):
             print("assert_equal(" + function_name + "(" + x[i] + "), " + y[i] + ")")
     else:
         print("FAILED: inputs and outputs don't line up")
     return
-        
+   
