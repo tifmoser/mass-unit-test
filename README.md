@@ -12,9 +12,9 @@ assert_equal(add5(2), ___)
 assert_equal(add5(3), ___)
 
 >>> mass_unit_test (add5, "1|2|3", '|', "5_6_7", '_')
-assert_equal(add5(1), 5)
-assert_equal(add5(2), 6)
-assert_equal(add5(3), 7)
+assert_equal(add5(1), 6)
+assert_equal(add5(2), 7)
+assert_equal(add5(3), 8)
 ```
 The output can then be copy+pasted into your own code, for unit testing purposes.
 
