@@ -23,4 +23,4 @@ Feel free to play around with the code, suggest improvements, do whatever! (exce
 If you need help figuring out how to create a branch, make a pull request, etc, see below for support.
 
 ## Support
-You can contact me at tifmoser@udel.edu. The TA's and professors can probably also help you out with most of your problems!
+You can contact me at tifmoser@udel.edu, or on Discord (Skalisty#6388). The TA's and professors can probably also help you out with most of your problems!
