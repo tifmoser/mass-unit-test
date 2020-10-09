@@ -1,4 +1,4 @@
-def mass_unit_test (function_name: str, inputs: str, split_char_in:str, outputs='', split_char_out='3Xkmb4Qk'):
+def mass_unit_test (function_name: str, inputs: str, split_char_in='\n', outputs='', split_char_out='3Xkmb4Qk'):
     '''
     This function generates unit tests to test the given function for the given
     outputs, when it's called with the given inputs. These unit tests can be pasted
