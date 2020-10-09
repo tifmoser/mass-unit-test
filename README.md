@@ -6,12 +6,13 @@ These functions are intended to be used in the Python shell.
 ```
 >>> %Run mass_unit_test.py
 
->>> mass_unit_test_a (add5, "1|2|3", '|')
+
+>>> mass_unit_test (add5, "1|2|3", '|')
 assert_equal(add5(1), ___)
 assert_equal(add5(2), ___)
 assert_equal(add5(3), ___)
 
->>> mass_unit_test_b (add5, "1|2|3", '|', "5_6_7", '_')
+>>> mass_unit_test (add5, "1|2|3", '|', "5_6_7", '_')
 assert_equal(add5(1), 5)
 assert_equal(add5(2), 6)
 assert_equal(add5(3), 7)
