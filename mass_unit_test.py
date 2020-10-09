@@ -14,9 +14,6 @@ def mass_unit_test (function_name: str, inputs: str, split_char_in='\n', outputs
         outputs (str): A triple-quoted string containing all the tested outputs, each
             separated by line breaks. Must line up one-to-one with inputs.
         split_char_out (str): The string used to separate elements of the outputs
-    
-    Returns:
-        (str): Unit tests that can be copy+pasted directly into your code
     '''
     x = inputs.split(split_char_in)
     y = []
